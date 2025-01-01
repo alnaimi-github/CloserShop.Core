@@ -1,0 +1,1 @@
+# CloserShop.Core
