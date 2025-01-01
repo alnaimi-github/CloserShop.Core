@@ -1,28 +1,25 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: CloserShop
-
+name: CloserShop Build
 on:
   push:
-    branches: [ "master" ]
+    branches:
+    - main
   pull_request:
-    branches: [ "master" ]
-
+    branches:
+    - main
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+    - name: Checking out Code
+      uses: actions/checkout@v2
+    - name: Installing .NET
+      uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 9.0.x
-    - name: Restore dependencies
+        include-prerelease: false
+    - name: Restoring Packages
       run: dotnet restore
-    - name: Build
+    - name: Building Project(s)
       run: dotnet build --no-restore
-    - name: Test
+    - name: Running Tests
       run: dotnet test --no-build --verbosity normal

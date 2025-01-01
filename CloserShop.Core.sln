@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloserShop.Api.Tests.Unit",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloserShop.Api.Tests.Acceptance", "CloserShop.Api.Tests.Acceptance\CloserShop.Api.Tests.Acceptance.csproj", "{FDCB12E4-E072-4806-8DB9-3261E1B47DE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloserShop.Api.Infrastructure.Build", "CloserShop.Api.Infrastructure.Build\CloserShop.Api.Infrastructure.Build.csproj", "{A0C20AE0-3973-4A8C-87CF-A0A5ABB977F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{FDCB12E4-E072-4806-8DB9-3261E1B47DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDCB12E4-E072-4806-8DB9-3261E1B47DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDCB12E4-E072-4806-8DB9-3261E1B47DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C20AE0-3973-4A8C-87CF-A0A5ABB977F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C20AE0-3973-4A8C-87CF-A0A5ABB977F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C20AE0-3973-4A8C-87CF-A0A5ABB977F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C20AE0-3973-4A8C-87CF-A0A5ABB977F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
