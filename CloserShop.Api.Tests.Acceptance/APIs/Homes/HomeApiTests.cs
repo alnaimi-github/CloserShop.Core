@@ -16,7 +16,7 @@ public class HomeApiTests
     {
         // given
         var expectedMessage =
-            "Hello, waisa. The princesse is in another castle.";
+            "Hi, From Closer Shop";
 
         // when
         var actualMessage =
